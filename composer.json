@@ -34,7 +34,7 @@
     "illuminate/support": "^10.0",
     "illuminate/console": "^10.0",
     "laracasts/flash": "^3.2.2",
-    "laravelcollective/html": "dev-6.x",
+    "laravelcollective/html": "6.x",
     "symfony/var-exporter": "^6.2.5"
   },
   "require-dev": {
