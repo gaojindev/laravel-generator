@@ -1,5 +1,5 @@
 {
-  "name": "gaojin/laravel-generator",
+  "name": "gaojindev/laravel-generator",
   "type": "library",
   "description": "InfyOm Laravel Generator",
   "keywords": [
@@ -34,7 +34,7 @@
     "illuminate/support": "^11.0",
     "illuminate/console": "^11.0",
     "laracasts/flash": "^3.2.2",
-    "gaojin/html": "1.0.0",
+    "gaojindev/html": "1.0.0",
     "symfony/var-exporter": "^6.2.5"
   },
   "require-dev": {
