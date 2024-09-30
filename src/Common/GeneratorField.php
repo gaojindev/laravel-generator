@@ -7,8 +7,8 @@ use Illuminate\Support\Str;
 class GeneratorField
 {
     /** @var string */
-    public string $name;
-    public string $dbType;
+    public string $name = '';
+    public string $dbType = '';
     public array $dbTypeParams = [];
     public array $dbExtraFunctions = [];
 
@@ -31,6 +31,33 @@ class GeneratorField
     public int $numberDecimalPoints = 2;
     /** @var \Doctrine\DBAL\Schema\Column */
     public $fieldDetails = null;
+
+    public function __construct() {
+        $this->name = '';
+        $this->dbType = '';
+        $this->dbTypeParams = [];
+        $this->dbExtraFunctions = [];
+    
+        $this->htmlType = '';
+        $this->htmlValues = [];
+    
+        $this->description;
+        $this->validations = '';
+        $this->inFormisSearchable = true;
+        $this->inFormisFillable = true;
+        $this->inFormisPrimary = false;
+        $this->inForminForm = true;
+        $this->inForminIndex = true;
+        $this->inForminView = true;
+        $this->inFormisNotNull = false;
+    
+        $this->migrationText = '';
+        $this->foreignKeyText = '';
+    
+        $this->numberDecimalPoints = 2;
+        /** @var \Doctrine\DBAL\Schema\Column */
+        $this->fieldDetails = null;
+    }
 
     public function parseDBType(string $dbInput)
     {
