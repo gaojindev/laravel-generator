@@ -41,7 +41,7 @@ class GeneratorField
         $this->htmlType = '';
         $this->htmlValues = [];
     
-        $this->description;
+        $this->description = '';
         $this->validations = '';
         $this->inFormisSearchable = true;
         $this->inFormisFillable = true;
